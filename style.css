@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+
+}
+.container{
+    
+    width: 100%;
+    height: 100vh;
+    margin:  0 auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.calculator{
+    width: 80%;
+    max-width: 320px;
+    height: 520px;
+    background-color:whitesmoke;
+    margin: 0 auto;
+    top: 20px;
+    border: 6px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0;
+    
+
+
+
+}
+.result{
+    height: 25%;
+}
+.history{
+    text-align: right;
+    height: 35%;
+    margin: 0 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    color:rgb(37, 223, 223);
+
+
+}
+.output{
+    text-align: right;
+    height: 65%;
+    margin: 10px 20px;
+    font-size: 30px;
+    
+
+}
+.keyboard{
+    height: 75%;
+    width: 100%;
+
+
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-left: 5%;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.number, .empty{
+    background-color:whitesmoke;
+
+}
+.operator, .number{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px;
+
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+button:nth-child(4){
+    font-size: 20px;
+    background-color: rgb(12, 182, 165);
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: rgb(255, 172, 19);
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: rgb(252, 155, 171);
+
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: rgb(136, 80, 248);
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: rgb(104, 81, 128);
+}
+
+
+
+
+@media screen and (max-width:380px){
+    .operator, .number, .empty{
+        width: 40px;
+        height: 40px;
+        
+    }
+}
+
+@media screen and (max-width:320px){
+    .operator, .number, .empty{
+        width: 30px;
+        height: 30px;
+        
+    }
+}
+
+
+@media screen and (max-width:255px){
+    .operator, .number, .empty{
+        width: 25px;
+        height: 25px;
+        
+    }
+}
+
+
+@media screen and (max-width:220px){
+    .operator, .number, .empty{
+        width: 20px;
+        height: 20px;
+        
+    }
+}
+
+
